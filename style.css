@@ -1,0 +1,230 @@
+/* Reset + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0a0a0a;
+  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+  background-repeat: repeat;
+  color: #f0f0f0;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: yellow;
+}
+
+.nav-buttons .btn {
+  background-color: #6a00ff;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.nav-buttons .btn:hover {
+  background-color: #4b00c9;
+}
+
+/* Main Section */
+.main-section {
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  color: #40e0d0;
+}
+
+.main-section h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.subtext {
+  font-size: 1.1rem;
+  color: #f07dc4;
+  margin-bottom: 3rem;
+}
+
+/* Cards */
+
+.card {
+  background: #4b00c9;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.left-card {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.card-text {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.left-card .btn {
+  all: unset; /* resets inherited styles */
+  background-color: #d81313;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.left-card .btn:hover {
+  background-color: #ffffff;
+  color: #0e0d0d;
+  border: 2px solid #e30b0b;
+}
+
+.features-list {
+  list-style-type: disc;
+  margin-top: 3rem;
+  padding-left: 0.5rem;
+  color: #e4ef19;
+}
+
+.right-card {
+  flex: 1;
+  text-align: center;
+}
+
+.right-card img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-buttons {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .main-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .card-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-card,
+  .right-card {
+    width: 100%;
+  }
+
+  .left-card {
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .right-card img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .left-card .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-buttons {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-buttons .btn {
+    width: auto;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
